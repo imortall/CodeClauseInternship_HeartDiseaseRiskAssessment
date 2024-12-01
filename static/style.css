@@ -1,0 +1,158 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Website Title */
+.container {
+    padding: 30px;
+    position: relative;
+    background: linear-gradient(45deg, #ff3d00, #00c853); /* Gradient from red to green */
+    background-size: 500% 500%;
+    animation: change-gradient 10s ease-in-out infinite;
+    color: white;
+}
+
+@keyframes change-gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.container-heading {
+    margin: 0;
+}
+
+.heading_font {
+    color: #2196F3; /* Bright blue for heading */
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+}
+
+.description p {
+    color: #fff; /* White for description text for better readability */
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Input Area */
+.ml-container {
+    margin: 30px auto;
+    flex: 1 0 auto;
+}
+
+.form {
+    text-align: center;
+    width: 300px; /* Increased width for better layout */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #2196F3; /* Blue border color */
+    border-radius: 25px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ff3d00; /* Change border color to red on focus */
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Predict Button */
+.my-cta-button {
+    background: #4CAF50; /* Green background for the button */
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    padding: 10px 30px;
+    color: white; /* Text color */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.my-cta-button:hover {
+    background: #388E3C; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+.my-cta-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Active state shadow */
+}
+
+/* Contact Icons */
+.contact-icon {
+    color: #2196F3; /* Blue for contact icons */
+    padding: 7px;
+    transition: color 0.3s;
+}
+
+.contact-icon:hover {
+    color: #ff3d00; /* Change color to red on hover */
+}
+
+/* Footer */
+.footer {
+    flex-shrink: 0;
+    position: relative;
+    padding: 20px;
+    background: #424242; /* Dark grey background for footer */
+    color: white;
+}
+
+.footer-description {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Result Section */
+.results {
+    padding: 30px 0;
+    flex: 1 0 auto;
+}
+
+.danger {
+    color: #ff3d00; /* Red color for danger text */
+    font-weight: bold;
+}
+
+.safe {
+    color: #4CAF50; /* Green color for safe text */
+    font-weight: bold;
+}
+
+.warning {
+    color: #2196F3; /* Blue color for warning text */
+    font-weight: bold;
+}
+
+
